@@ -1,0 +1,37 @@
+.navbar {
+    background-color: #d3e3fc;
+}
+.nav-brand {
+    height: 100%;
+}
+.box {
+    margin-top: 75px;
+    /* height:350px; */
+    background-color:rgb(247, 247, 247);
+    box-shadow: 5px 5px 10px grey; 
+}
+.receipt-input {
+    margin-top: 3%;
+    height: 30px;
+    margin-bottom: 3%;
+}
+.receipt-input:focus{
+    color: black;
+    background-color: #d3e3fc;
+}
+.input-box {
+    /* margin-left: 10px; */
+    margin-right: 5px;
+    max-width: 100px;
+    background-color: #00887a;
+    text-align: center;
+    color: white;
+    padding-top: 4px;
+    box-shadow: 3px 3px 5px grey;
+}
+.form-button{
+    margin-bottom: 3%;
+}
+.receipt-form{
+    background-color: rgb(246, 244, 244);
+}

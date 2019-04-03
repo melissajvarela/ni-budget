@@ -1,0 +1,63 @@
+.margin-top {
+    margin-top: 75px;
+}
+.margin-top50 {
+    margin-top: 50px;
+}
+.margin-bottom{
+    margin-bottom: 50px;
+}
+.list-box {
+    margin-top: 25px;
+}
+
+.list-item {
+    list-style-type: none;
+    color: black;
+    font-size: 18px;
+    padding: 15px;
+    margin-right: 20px;
+    background-color: rgb(252, 252, 252);
+    border: .3px solid black;
+    box-shadow: 5px 5px 10px grey;
+    width: 20%;
+    height: 200px;
+    margin-bottom: 15px;
+    float: left;
+}
+.list-item:hover {
+    background-color: rgb(189, 186, 186)
+}
+.sub-title{
+    text-align: center;
+    margin-left: 10%;
+}
+
+.my-chart {
+    height: 100px;
+    width: 100px;
+}
+
+@media (max-width: 1200px) {
+    .list-item {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 980px) {
+    .list-item {
+        font-size: 14px ;
+    }
+}
+
+@media (max-width: 767px) {
+   .sub-title {
+       text-align: left;
+   }
+}
+
+@media (max-width: 530px) {
+    .list-item {
+        font-size: 12px;
+    }
+ }

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--[if lte IE 6]><html class="preIE7 preIE8 preIE9"><![endif]-->
+<!--[if IE 7]><html class="preIE8 preIE9"><![endif]-->
+<!--[if IE 8]><html class="preIE9"><![endif]-->
+<!--[if gte IE 9]><!--><html><!--<![endif]-->
+  <head>
+    <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title>DMW Halo Receipt Page</title>
+  <meta name="author" content="Will J. Robertson, Dj Rodriguez">
+  <meta name="description" content="Landing Page for DMW Halo">
+  <meta name="keywords" content="landing page, receipts">
+  <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
+  <link rel="stylesheet" href="css/receipt.css">
+  </head>
+  <body>
+      <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container-fluid">
+              <div class="navbar-header">
+                  <a class="navbar-brand" href="#">
+                    <img alt="Brand" class="nav-brand" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc75Ss-Kj0Md4H5gbxsUCg113pjD3ONuW5GwpDL4z4F0zUrc-WnQ">
+                  </a>
+                  
+            </div>
+          </div><!-- /.container-fluid -->
+        </nav>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="conainer-fluid">
+            <div class="col-md-offset-3 col-md-6 box">
+              <div class="row">
+                  <div class="input-box receipt-input col-sm-2 col-sm-offset-2">
+                    <p>Price:</p>
+                  </div>
+                  <input type="text" class="receipt-input col-sm-6" id="priceBox" value="" placeholder="Price" >
+                </div>
+                <div class="row">
+                    <div class="input-box receipt-input col-sm-2 col-sm-offset-2">
+                      <p>Date:</p>
+                    </div>
+                    <input type="text" class="receipt-input col-sm-6" id="dateBox" value="" placeholder="mm/dd/yy" >
+                </div>
+                <div class="row">
+                    <div class="input-box receipt-input col-sm-2 col-sm-offset-2">
+                      <p>Category:</p>
+                    </div>
+                    <!-- <input type="text" class="receipt-input col-sm-6" id="categoryBox" value="" placeholder="Category" > -->
+                    <select class="receipt-input" name="Category" id="categoryBox">
+                      <option value="bills">Bills</option>
+                      <option value="food">Food</option>
+                      <option value="entertainment">Entertainment</option>
+                      <option value="personal">Personal</option>
+                      <option value="clothing">Clothing</option>
+                      <option value="miscellaneous">Miscellaneous</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <div class="input-box receipt-input col-sm-2 col-sm-offset-2">
+                      <p>Location:</p>
+                    </div>
+                    <input type="text" class="receipt-input col-sm-6" id="locationBox" value="" placeholder="location" >
+                </div>
+                <div class="row">
+                    <div class="input-box receipt-input col-sm-2 col-sm-offset-2">
+                      <p>Description:</p>
+                    </div>
+                    <input type="text" class="receipt-input col-sm-6" id="descriptionBox" value="" placeholder="Description" maxlength="15" >
+                </div>
+                <div class="row">
+                  <button class="col-sm-offset-5 col-sm-2 form-button" id="submitButton" value="submit">Submit</button>
+                </div>
+                <div class="row">
+                  <a href="rec-history.html">
+                      <button class="col-sm-offset-5 col-sm-2 form-button">To History</button>
+                  </a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!-- initalizing firebase -->
+<script src="config.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
+<script>
+   var config = {
+    apiKey: config1.apiKey,
+    authDomain: config1.authDomain,
+    databaseURL: config1.databaseURL,
+    projectId: config1.projectId,
+    storageBucket: config1.storageBucket,
+    messagingSenderId: config1.messagingSenderId,
+  };
+  firebase.initializeApp(config);
+</script>
+</script>
+  <script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <script src="js/receipts.js"></script>
+  </body>
+</html>
